@@ -43,7 +43,7 @@ document.querySelector("#faster").addEventListener("click", function() {
 document.querySelector("#volumeSlider").addEventListener("change", function() {
 	console.log("Volume is " + video.volume * 100);
 	video.volume = this.value / 100
-	document.querySelector('#volume').innerHTML = (vid.volume * 100) + '%'
+	document.querySelector('#volume').innerHTML = (video.volume * 100) + '%'
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
@@ -61,11 +61,11 @@ document.querySelector("#mute").addEventListener("click", function() {
 });
 
 document.querySelector("#old").addEventListener("click", function() {
-	console.log("old");
-	video.classlist.add('oldTime')
+	console.log("Old");
+	video.classlist.add('#oldTime')
 });
 
 document.querySelector("#original").addEventListener("click", function() {
 	console.log("Original");
-	video.classlist.add('oldTime')
+	video.classlist.remove('#oldTime')
 });
