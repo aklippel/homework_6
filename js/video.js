@@ -62,10 +62,10 @@ document.querySelector("#mute").addEventListener("click", function() {
 
 document.querySelector("#old").addEventListener("click", function() {
 	console.log("Old");
-	video.classlist.add('#oldTime')
+	video.classList.add('oldTime')
 });
 
 document.querySelector("#original").addEventListener("click", function() {
 	console.log("Original");
-	video.classlist.remove('#oldTime')
+	video.classList.remove('oldTime')
 });
